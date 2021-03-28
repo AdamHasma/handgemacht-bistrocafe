@@ -61,17 +61,21 @@ p {
 nav a {
   font-size: 19px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 23px;
   letter-spacing: 0em;
   text-align: left;
   color: white;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 ul li {
   list-style: none;
+}
+
+nav {
+  position: relative;
+  bottom: 2px;
 }
 
 nav ul {
@@ -82,7 +86,7 @@ nav ul {
 }
 
 header img {
-  width: 150px;
+  width: 192px;
 }
 
 header {
@@ -98,7 +102,7 @@ header {
   align-items: center;
   width: 1280px;
   margin: auto;
-  padding: 10px 0px;
+  padding: 14px 0px 10px;
 }
 
 .bg-img {
