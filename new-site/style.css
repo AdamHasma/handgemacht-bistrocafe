@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cabin, sans-serif;
+}
+
+.c-primary {
+  color: #B12C2A !important;
+}
+
+img {
+  pointer-events: none;
+}
+
+h2 {
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+h1 {
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.small-text {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+nav a {
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+ul li {
+  list-style: none;
+}
+
+nav ul {
+  display: flex;
+  width: 805px;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+header img {
+  width: 192px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1280px;
+  margin: auto;
+  padding: 10px 0px;
+}
+
+.bg-img {
+  object-fit: cover;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.bg-layer {
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 80vh;
+  position: absolute;
+  z-index: -1;
+}
+
+button {
+  text-transform: uppercase;
+  background: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 50px;
+  padding: 10px 25px 7px;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.hero-container {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.h2-hero {
+  display: flex;
+  justify-content: center;
+}
+
+.h2-hero h2 {
+  color: white;
+  margin: 0 20px;
+}
+
+.hero-container h1 {
+  color: white;
+}
+
+.hero-container p {
+  width: 600px;
+  color: white;
+}
+
+.mt-s {
+  margin-top: 20px;
+}
+
+.mt-m {
+  margin-top: 40px;
+}
+
+.mt-l {
+  margin-top: 80px;
+}
+
+.mr-xs {
+  margin-right: 8px;
+}
+
+.mr-m {
+  margin-right: 25px;
+}
+
+.mr-l {
+  margin-right: 80px;
+}
+
+.ml-m {
+  margin-left: 25px;
+}
+
+.mt-xs {
+  margin-top: 6px;
+}
+
+.container {
+  width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+}
+
+.card-content {
+  width: 284px;
+}
+
+.card-content p {
+  width: 284px;
+  text-align: left;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.card-content p.dots {
+  display: inline-block;
+  width: max-content;
+  float: right;
+}
+
+.card-content > div {
+  height: 20px;
+}
+
+.card-content > div > span {
+  display: inline-block;
+  border-bottom: 2px dotted black;
+  opacity: 0.5;
+  width: 83%;
+  position: relative;
+  bottom: 2px;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  height: 250px;
+  width: 100%;
+}
+
+.horizonzal-line {
+  height: 100%;
+  width: 6px;
+  background: black;
+}
+
+.text-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.text-container p {
+  width: 200px;
+}
+
+.text-container a {
+  font-size: 19px;
+  color: black;
+  text-decoration: none;
+}
+
+.social {
+  height: 360px;
+}
+
+.social p.small-text {
+  font-weight: 500;
+}
+
+.social a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.social > img {
+  opacity: 0.3;
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+
+.social-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+footer {
+  background: #181818;
+  width: 100%;
+}
+
+.logo-container img {
+  width: 184px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.footer-container > div {
+  display: flex;
+  padding-top: 80px;
+  width: 1050px;
+  margin: auto;
+}
+
+.footer-container {
+  width: 1050px;
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+.footer-container a, .footer-container p {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 160px;
+  justify-content: space-between;
+}
+
+.footer-links-contaienr {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.col:last-child {
+  width: 90px;
+}
+
+hr {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/*# sourceMappingURL=style.css.map */
