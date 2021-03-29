@@ -1,4 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@keyframes arrow-anim {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+@keyframes arrow-anim-r {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes img-anim-r {
+  from {
+    height: 344px;
+  }
+  to {
+    height: 0px;
+  }
+}
+@keyframes img-anim {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 344px;
+  }
+}
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -212,10 +244,19 @@ button {
 .card {
   display: flex;
   align-items: flex-start;
+  cursor: pointer;
 }
 
 .card-content {
   width: 284px;
+}
+
+.collapse {
+  display: block;
+  width: 1050px;
+  position: relative;
+  right: 3px;
+  object-fit: cover;
 }
 
 .card-content p {
