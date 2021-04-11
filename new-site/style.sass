@@ -31,8 +31,12 @@ $primary: #B12C2A
   padding: 0
   box-sizing: border-box
 
+html
+  scroll-behavior: smooth
+
 body
   font-family: Cabin, sans-serif
+  font-size: 16px
 
 .c-primary
   color: $primary !important
@@ -132,6 +136,25 @@ header
   position: absolute
   z-index: -1
 
+.rechtlich-container ul>li
+  list-style: initial
+
+.rechtlich-container ul
+  font-size: 19px
+
+.rechtlich-container a
+  color: black
+  font-weight: bold
+
+.rechtlich-container h3
+  font-size: 1.4rem
+  margin-top: 3rem
+
+.rechtlich-container h4
+  font-size: 1.2rem
+  margin-top: 1rem
+  margin-bottom: -.5rem
+
 button
   text-transform: uppercase
   background: none
@@ -141,6 +164,21 @@ button
   padding: 10px 25px 7px
   font-size: 19px
   cursor: pointer
+
+.p-unset
+  position: unset
+
+.rechtlich-container p
+  text-align: left
+  margin-top: 1rem
+
+.rechtlich-container *
+  text-align: left
+
+.rechtlich-container
+  max-width: 1050px
+  margin: auto
+
 
 .hero-container
   width: 100%
