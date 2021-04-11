@@ -1,0 +1,17 @@
+.all-wrapper {
+  background: white;
+  position: relative;
+}
+.all-wrapper{
+  animation: translate 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -5s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes translate {
+  to {
+    transform: translateY(-600px);
+  }
+}
