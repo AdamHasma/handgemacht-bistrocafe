@@ -3,8 +3,6 @@ const navImgs = document.querySelectorAll("nav>ul>li>a>img");
 const allWrapper = document.querySelector(".all-wrapper");
 const pageContainer = document.querySelector(".page-container");
 let i = 0;
-const wantedBodyHeight = document.body.offsetHeight;
-console.log(wantedBodyHeight);
 const initialBodyHeight = document.body.offsetHeight - window.innerHeight;
 
 window.addEventListener("scroll", () => {
