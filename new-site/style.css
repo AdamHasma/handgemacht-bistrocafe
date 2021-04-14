@@ -176,6 +176,24 @@ header {
   -webkit-backdrop-filter: blur(4px);
 }
 
+.disclaimer {
+  position: absolute;
+  z-index: 4;
+  margin-top: 100px;
+  width: 500px;
+}
+
+.blur::before {
+  content: "";
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  background: #f7f7f7bf;
+  z-index: 3;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+}
+
 .header-wrapper {
   display: flex;
   justify-content: space-between;
@@ -543,6 +561,10 @@ footer {
   justify-content: space-between;
 }
 
+.call {
+  display: none;
+}
+
 .footer-links-contaienr {
   display: flex;
   width: 100%;
@@ -760,6 +782,10 @@ hr {
   .logo-container img {
     width: 120px;
   }
+
+  .disclaimer {
+    width: 300px;
+  }
 }
 @media (max-width: 600px) {
   .col, .col:last-child {
@@ -788,6 +814,28 @@ hr {
   .logo-container {
     flex-direction: row;
     margin-bottom: 40px;
+  }
+
+  .kuh {
+    width: 120px;
+  }
+
+  .call {
+    line-height: 0.7;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0px 20px 20px 0px;
+    z-index: 4;
+    padding: 20px;
+    background-color: #B12C2A;
+    border-radius: 50px;
+  }
+
+  .call-icon {
+    pointer-events: none;
+    width: 30px;
   }
 }
 
