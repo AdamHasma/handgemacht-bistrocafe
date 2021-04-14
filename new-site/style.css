@@ -60,6 +60,10 @@ body {
   color: #B12C2A !important;
 }
 
+.row img {
+  width: 600px;
+}
+
 img {
   pointer-events: none;
 }
