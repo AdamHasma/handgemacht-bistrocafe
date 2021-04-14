@@ -5,6 +5,8 @@ const pageContainer = document.querySelector(".page-container");
 let i = 0;
 const initialBodyHeight = document.body.offsetHeight - window.innerHeight;
 
+
+// scroll animation
 window.addEventListener("scroll", () => {
   document.body.style.setProperty("--scroll", window.pageYOffset / initialBodyHeight);
 }, false);
@@ -25,7 +27,29 @@ window.onscroll = function() {
   }
 };
 
-c1.addEventListener("click", () => {
+
+//Mobile Menu
+document.addEventListener(
+  "DOMContentLoaded", () => {
+    const menu = new MmenuLight(
+      document.querySelector("#my-menu"),
+      "(max-width: 767px)"
+    );
+
+    const navigator = menu.navigation();
+    const drawer = menu.offcanvas();
+
+    document.querySelector("a.menu-collapse")
+      .addEventListener("click", (evnt) => {
+        evnt.preventDefault();
+        drawer.open();
+      });
+  }
+);
+
+
+// Picture collapse on the card
+/* c1.addEventListener("click", () => {
   if (document.body.contains(document.querySelector(".collapse"))) {
     document.querySelector(".collapse").style.animation = "img-anim-r .5s ease-out forwards"
     c1.children[0].style.animation = "arrow-anim-r .3s ease-out forwards"
@@ -39,4 +63,4 @@ c1.addEventListener("click", () => {
     `;
     document.querySelector(".collapse").style.animation = "img-anim .5s ease-out forwards"
   }
-})
+}) */

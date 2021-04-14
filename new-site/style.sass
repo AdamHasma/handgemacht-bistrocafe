@@ -41,6 +41,7 @@ html
 body
   font-family: Cabin, sans-serif
   font-size: 16px
+  // overflow-x: hidden
 
 .c-primary
   color: $primary !important
@@ -83,6 +84,9 @@ p
 
 .center
   text-align: center
+
+.text-container a
+  display: none
 
 nav a, .kontakt-container a.custom-btn
   font-size: 19px
@@ -149,9 +153,9 @@ header
   display: flex
   justify-content: space-between
   align-items: center
-  width: 1280px
+  max-width: 1280px
   margin: auto
-  padding: 14px 0px 10px
+  padding: 14px 20px 10px
 
 .bg-img
   object-fit: cover
@@ -162,7 +166,7 @@ header
   z-index: -1
 
 .bg-layer
-  background: rgba(0, 0, 0, 0.2)
+  background: rgba(0, 0, 0, 0.4)
   width: 100%
   height: 80vh
   position: absolute
@@ -194,7 +198,7 @@ header
   display: flex
   flex-direction: column
   align-items: center
-  max-width: 1050px
+  max-width: 1010px
   margin: auto
 
 .rechtlich-container p
@@ -205,7 +209,7 @@ header
   text-align: left
 
 .rechtlich-container
-  max-width: 1050px
+  max-width: 1010px
   margin: auto
 
 .map
@@ -253,6 +257,7 @@ button
 .h2-hero
   display: flex
   justify-content: center
+  margin-top: 100px
 
 .h2-hero h2
   color: white
@@ -289,8 +294,13 @@ button
 .mt-xs
   margin-top: 6px
 
+.kuh
+  position: absolute
+  right: 0
+  transform: translate(0px, -100%)
+
 .container
-  width: 1050px
+  max-width: 1010px
   margin-left: auto
   margin-right: auto
   display: flex
@@ -306,7 +316,7 @@ button
 .card
   display: flex
   align-items: flex-start
-  cursor: pointer
+  cursor: auto
 
 .card-content
   width: 284px
@@ -343,7 +353,7 @@ button
 
 .row
   display: flex
-  align-items: flex-start
+  align-items: center
   height: 250px
   width: 100%
 
@@ -359,6 +369,19 @@ button
   justify-content: center
   width: 100%
   height: 100%
+
+.menu-icon
+  width: 30px
+  height: 2px
+  background-color: white
+  display: none
+
+.menu-icon:not(:last-child)
+  margin-bottom: 5px
+
+a[href='#my-menu']
+  display: flex
+  align-items: center
 
 .text-container p
   width: 200px
@@ -410,13 +433,13 @@ footer
 .footer-container>div
   display: flex
   padding-top: 80px
-  width: 1050px
+  max-width: 1010px
   margin: auto
 
 .footer-container
-  width: 1050px
+  max-width: 1010px
   margin: auto
-  padding-bottom: 40px
+  padding-bottom: 80px
 
 .footer-container a, .footer-container p
   color: rgba(255, 255, 255, 0.6)
@@ -440,3 +463,191 @@ footer
 hr
   border: 1px solid rgba(255, 255, 255, 0.2)
   background: rgba(255, 255, 255, 0.2)
+
+
+// padding fix
+@media (max-width: 1100px)
+  .category-wrapper
+    padding: 0px 20px
+
+  img[src="assets/sk-left.svg"], img[src="assets/sk-right.svg"]
+    width: 350px
+
+
+//iPad View
+@media (max-width: 1023px)
+  nav ul
+    width: 635px
+    margin-left: auto
+
+  .hero-container h1 img
+    bottom: unset
+    margin: 5px 0px
+
+  .hero-container h1
+    margin-top: 20px
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  .header-wrapper
+    padding: 14px 20px 10px
+
+  .card-container>.card
+    flex: 0 0 39%
+
+  .category-wrapper div.row>img
+    width: 484px
+
+  .horizonzal-line
+    height: 201px
+
+  .row
+    height: auto
+
+  .h2-hero img
+    display: none
+
+  footer hr
+    display: none
+
+  .kuh
+    width: 150px
+
+  .nav-logo
+    width: 150px
+
+  footer p.small-text, footer div.logo-container
+    margin-left: 20px
+
+@media (max-width: 854px)
+  nav ul
+    width: unset
+
+  nav
+    width: clamp(560px, 110vw, 771px)
+
+  .col, .col:last-child
+    width: 85px
+
+  footer div.logo-container
+    margin-right: 40px
+    margin-left: 20px
+
+  .footer-links-contaienr
+    width: 60%
+
+  .horizonzal-line
+    display: none
+
+  .footer-container > div
+    justify-content: space-around
+    align-items: flex-start
+
+
+//Mobile View
+@media (max-width: 767px)
+  .menu-icon
+    display: block
+
+  .menu-collapse>div
+    padding: 10px
+
+  .custom-btn>img
+    display: none
+
+  .h2-hero h2, h2
+    font-size: 26.7px
+
+  h1
+    font-size: 57.6px
+
+  .hero-container p
+    width: 100%
+    padding: 0px 20px
+
+  .mt-s
+    margin-top: 10px
+
+  .mt-m
+    margin-top: 20px
+
+  .mt-l
+    margin-top: 40px
+
+  .mr-xs
+    margin-right: 6px
+
+  .mr-m
+    margin-right: 13px
+
+  .mr-l
+    margin-right: 40px
+
+  .ml-m
+    margin-left: 13px
+
+  .mt-xs
+    margin-top: 6px
+
+  p
+    font-size: 16px
+
+  .text-container p
+    margin-top: 0px
+    width: 70%
+
+  .text-container
+    margin-bottom: 10px
+
+  .category-wrapper:nth-child(2n)>.row
+    flex-direction: column-reverse
+
+  .row
+    display: flex
+    flex-direction: column
+
+  .category-wrapper div.row > img
+    width: 100%
+    margin-right: 0
+
+  footer p.small-text
+    width: 60%
+
+
+// card full width mediaquery
+@media (max-width: 673px)
+  .card-container>.card
+    flex: 0 0 auto
+    width: 300px
+    margin: auto
+    margin-bottom: 8px
+
+  .logo-container img:first-child
+    margin-bottom: 20px
+
+  .logo-container img
+    width: 120px
+
+@media (max-width: 600px)
+  .col, .col:last-child
+    height: 120px
+    margin-bottom: 30px
+    width: 100px
+
+  .footer-links-contaienr
+    flex-wrap: wrap
+    margin-left: 30px
+
+  .footer-container > div
+    flex-direction: column
+
+  .logo-container img:first-child
+    margin-right: 40px
+
+  .logo-container img
+    width: 140px
+
+  .logo-container
+    flex-direction: row
+    margin-bottom: 40px
