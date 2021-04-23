@@ -798,6 +798,10 @@ hr {
     width: 70%;
   }
 
+  .row .ml-m {
+    margin-left: 0;
+  }
+
   .text-container {
     margin-bottom: 10px;
   }
