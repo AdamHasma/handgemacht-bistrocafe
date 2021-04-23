@@ -459,18 +459,12 @@ button {
 }
 
 .card-content > div > span {
-  margin-top: 5px;
   display: inline-block;
+  border-bottom: 2px dotted black;
   opacity: 0.5;
-  width: max-content;
+  width: 83%;
   position: relative;
   bottom: 2px;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-.info {
-  margin-top: 5px;
 }
 
 .row {
