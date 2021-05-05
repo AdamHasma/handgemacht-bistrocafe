@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Handgemacht Bistrocafe</title>
-  <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="animation.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/mmenu-light@3.0.8/dist/mmenu-light.min.css" />
 </head>
 
 <body>
@@ -18,9 +20,16 @@
         <a href="index.html">
           <img class="nav-logo" src="assets/handgemacht.png" alt="">
         </a>
+        <a class="menu-collapse" href="#my-menu">
+          <div>
+            <div class="menu-icon"></div>
+            <div class="menu-icon"></div>
+            <div class="menu-icon"></div>
+          </div>
+        </a>
         <nav id="my-menu">
           <ul>
-            <li><a href="index.html#speisekarte"><img src="assets/icon-speisekarte.png" alt="">Speisekarte</a></li>
+            <li><a href="#speisekarte"><img src="assets/icon-speisekarte.png" alt="">Speisekarte</a></li>
             <li><a href="bistro.html"><img src="assets/icon-bistro.png" alt="">Bistro</a></li>
             <li><a href="eiscafe.html"><img src="assets/icon-eiscafe.png" alt="">Eiscafe</a></li>
             <li><a href="baeckerei.html"><img src="assets/icon-baeckerei.png" alt="">Bäckerei</a></li>
@@ -96,4 +105,8 @@
       <!-- <img class="kuh" src="assets/kuh.svg" alt=""> -->
     </footer>
   </div>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script src="main.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mmenu-light@3.0.8/dist/mmenu-light.min.js"></script>
 </body>

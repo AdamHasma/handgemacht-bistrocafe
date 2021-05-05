@@ -297,6 +297,40 @@ header {
   margin: auto;
 }
 
+.uhr {
+  display: flex;
+}
+
+.uhr p {
+  width: 70px;
+}
+
+.tl {
+  text-align: left;
+}
+
+.times > div {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+body div.times {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+}
+
+.times * {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.times > h3 {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
 .map {
   object-fit: cover;
   width: 100%;
@@ -631,6 +665,14 @@ hr {
   }
 }
 @media (max-width: 1023px) {
+  .uhr p.small-text {
+    width: 70px;
+  }
+
+  .times h4, .times > h3 {
+    margin-left: 20px;
+  }
+
   nav ul {
     width: 635px;
     margin-left: auto;
